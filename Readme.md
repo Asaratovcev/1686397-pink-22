@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Andrey Saratovcev](https://up.htmlacademy.ru/adaptive/22/user/1686397).
-* Наставник: `Неизвестно`.
+* Наставник: [Кристина Жиделягина](https://htmlacademy.ru/profile/id575159).
 
 ---
 
