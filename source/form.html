@@ -45,7 +45,7 @@
         <div class="form__wrapper">
           <h2 class="visually-hidden">Заполните форму, чтобы принять участие</h2>
           <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-          <form class="form__main" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form__main" action="https://echo.htmlacademy.ru" method="post" id="form_main">
             <div class="form-name__wrapper">
               <div class="form-name__item form-name__item--surname">
                 <label class="form-name__text" for="surname">Фамилия:</label>
@@ -118,10 +118,11 @@
               </fieldset>
               <div>
                 <label class="form-emotions__text" for="emotions">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
-                <textarea id="emotions" name="text" form="mailform" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <textarea id="emotions" name="text" form="form_main" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
               <button class="form__button" type="submit">Отправить форму</button>
               <p class="form__star">* — обязательные поля</p>
+          </form>
         </div>
       </section>
     </main>
