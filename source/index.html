@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
@@ -14,22 +15,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a>
+              <a class="main-nav__text">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__text" href="catalog.html">
                 Фотографии
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">
+              <a class="main-nav__text" href="form.html">
                 Конкурс
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="#">
+              <a class="main-nav__text" href="#">
                 HTML Academy
               </a>
             </li>
@@ -42,7 +43,9 @@
       <section class="download">
         <div class="download__wrapper">
           <h2 class="visually-hidden">Загрузка приложения Pink</h2>
-          <p class="download__slogan">Взгляните на жизнь иначе!</p>
+          <div class="download__bg">
+            <p class="download__slogan">Взгляните на жизнь иначе!</p>
+          </div>
           <a class="download__link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
@@ -82,9 +85,10 @@
               <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
+          <img src="img/iphone.png" width="157" height="320" alt="Айфон">
         </div>
       </section>
-      <section class="research research--visible">
+      <section class="research visually-hidden">
         <div class="research__wrapper">
           <img class="research__timer" src="img/timer.svg" alt="24 часа">
           <h2 class="research__title">Эффект на 24 часа!</h2>
@@ -95,12 +99,12 @@
       <section class="feedback">
         <div class="feedback__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
-          <img class="feedback__quotes feedback__quotes--visible" src="img/quotes.svg" alt="Ковычки">
+          <img class="feedback__quotes visually-hidden" src="img/quotes.svg" alt="Ковычки">
           <ul class="feedback__list">
             <li class="feedback__item">
               <p class="feedback__name feedback__name--top">Николай Петров</p>
               <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <div class="feedback__name--bottom">
+              <div class="feedback__name--bottom visually-hidden">
                 <p class="feedback__name">Николай Петров</p>
                 <p class="feedback__name-profession">25 лет, водитель трамвая</p>
               </div>
@@ -117,7 +121,7 @@
         <div class="price__wrapper slider">
           <h2 class="visually-hidden">Список цен и опций</h2>
           <table class="price__table">
-            <tr>
+            <tr class="price__row">
               <th><p class="price__name">База</p><p class="price__cost">1,99 USD</p></th>
               <th class="price__special"><p class="price__name">Стандарт</p><p class="price__cost">3,99 USD</p></th>
               <th><p class="price__name">Анлим</p><p class="price__cost">9,99 USD</p></th>
