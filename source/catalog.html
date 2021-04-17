@@ -5,7 +5,7 @@
       <link rel="stylesheet" href="css/style.css">
       <title>HTML Academy: Пинк</title>
     </head>
-<body>
+<body class="page__body">
   <header class="page-header">
     <a href="index.html"><img src="img/logotype-mobile.svg" width="74" height="23" alt="Pink"></a>
     <nav class="main-nav">
@@ -14,23 +14,23 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a href="index.html">
+          <li class="main-nav__item main-nav__item">
+            <a class="main-nav__text" href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-nav__item">
-            <a href="#">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__text" href="#">
               Фотографии
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="form.html">
+          <li class="main-nav__item">
+            <a class="main-nav__text" href="form.html">
               Конкурс
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#">
+            <a class="main-nav__text" href="#">
               HTML Academy
             </a>
           </li>
@@ -42,10 +42,9 @@
       <section class="title">
         <h1 class="title__text">Фотографии пользователей</h1>
       </section>
-      <div class="slogan">
-        <p class="slogan__title">Взгляните на фотографии, которые выкладывают пользователи!</p>
-        <p class="slogan__text">Видите, как не хватает ваших?</p>
-      </div>
+      <section class="subtitle">
+        <p class="subtitle__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </section>
       <section class="panorama">
         <div class="panorama__wrapper">
           <h2 class="visually-hidden">Панорама дня</h2>
@@ -55,11 +54,11 @@
           </div>
         </div>
         <div class="panorama-description">
-          <p class="panorama-description__username">Анна</p>
-          <p class="panorama-description__time">(5 минут назад)</p>
-          <p class="panorama-description__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="photo-description__username">Анна</p>
+          <p class="photo-description__time">(5 минут назад)</p>
+          <p class="photo-description__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <input type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
-          <p class="panorama-description__likes">Нравится: 215</p>
+          <p class="photo-description__likes">Нравится: 215</p>
         </div>
       </section>
       <section class="photo">
@@ -125,27 +124,27 @@
           </div>
         </div>
       </section>
-      <div class="slogan">
-        <p class="slogan__title">Затмите их всех!</p>
+      <section class="slogan">
+        <p class="slogan__text">Затмите их всех!</p>
         <p class="slogan__text">Выкладывайте все, что накопилось в телефоне!</p>
-      </div>
+      </section>
       <section class="post">
         <div class="post__wrapper">
           <h2 class="visually-hidden">Опубликуй свое фото</h2>
           <a href="#"><img src="img/photo-7.jpg" width="280" height="374" alt="Зимняя дорога"></a>
-          <ul class="post-controls__list">
-            <li class="post-controls__item post-controls__item--active">
+          <ul class="post__controls-list">
+            <li class="post__controls-item post__controls-item--active">
               <input type="image" src="img/crop.png" width="44" height="44" alt="Обрезать фото">
             </li>
-            <li class="post-controls__item">
+            <li class="post__controls-item">
               <input type="image" src="img/fill.png" width="48" height="43" alt="Заливка фото">
             </li>
-            <li class="post-controls__item ">
+            <li class="post__controls-item">
               <input type="image" src="img/contrast.png" width="32" height="32" alt="Контраст фото">
             </li>
           </ul>
           <form method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="post_form">
+            <fieldset class="post__form">
               <ul class="post__list">
                 <li class="post__item post__item--active">
                   <input type="range" min="0" max="100" step="1" value="90" id="crop" name="crop">
