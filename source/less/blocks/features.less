@@ -2,6 +2,28 @@
   background-color: @lightgray;
 }
 
+.features__wrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 154px;
+    flex-direction: column-reverse;
+  }
+}
+
+.features__list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
 .features__title {
   margin: 0;
   margin-bottom: 24px;

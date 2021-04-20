@@ -2,13 +2,21 @@
   background-color: @darkgray;
   color: @white;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+  }
 }
 
-.main-nav__text {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: @white;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 32px;
+.page-header__logo {
+  height: 23px;
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+  }
 }

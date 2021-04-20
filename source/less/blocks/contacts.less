@@ -1,6 +1,21 @@
+.contacts {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .contacts__subject-wrapper {
   margin-bottom: 45px;
   margin-top: 50px;
+  align-self: center;
 }
 
 .contacts__question {
