@@ -1,24 +1,41 @@
 .download {
+  background-image: url("/img/back-mobile.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
   color: @white;
-  height: 667px;
   width: 320px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
+    background-image: url("/img/back-tablet.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
     width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/back-desktop.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 1200px;
+  }
+}
+
+.download__holder {
+  padding: 0 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 84px;
   }
 }
 
 .download__wrapper {
-  background-image: url("../../img/title_bg.jpg");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: relative;
-  width: 100%;
-  padding: 0 20px;
+  min-height: 729px;
 
   @media (min-width: @tablet-width) {
-    height: 100%;
+    max-width: 300px;
+    text-align: start;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,30 +44,33 @@
 }
 
 .download__img {
-  height: 286px;
   width: 320px;
+  margin-top: 45px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
+    right: 0;
     bottom: 0;
-    height: 619px;
     width: 660px;
+    height: 619px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1050px;
-    height: 645px;
   }
 }
 
 .download__controls {
+  padding: 0 20px;
+  padding-bottom: 38px;
   background-color: @darkgray;
-  outline: 5px solid fade(green, 50%);
-  outline-offset: -5px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
+    position: static;
     background-color: transparent;
-    width: 300px;
   }
 }
 
@@ -61,20 +81,16 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
-  outline: 5px solid fade(red, 50%);
-  outline-offset: -5px;
-
-  @media (min-width: @tablet-width) {
-    width: 300px;
-  }
 }
 
 .download__list {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 31px;
 }
 
 .download__link {
+  display: block;
   text-decoration: none;
   color: @white;
   border: 3px solid @white;
@@ -82,6 +98,9 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+  padding: 21px 39px;
+  margin-top: 28px;
+  margin-bottom: 38px;
 }
 
 .download__description {
