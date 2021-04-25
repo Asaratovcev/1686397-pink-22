@@ -1,3 +1,40 @@
+.research {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @lightgray;
+  }
+}
+
+.research__wrapper {
+  display: flex;
+  box-sizing: border-box;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+    width: 660px;
+    padding-top: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+    width: 1200px;
+    padding-bottom: 67px;
+    padding-top: 17px;
+  }
+}
+
+.research__article {
+  @media (min-width: @tablet-width) {
+    margin-left: 71px;
+  }
+}
+
 .research__title {
   font-weight: bold;
   font-size: 30px;

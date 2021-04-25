@@ -2,13 +2,25 @@
   background-color: @darkgray;
   color: @white;
   display: flex;
+  justify-content: space-between;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+    width: 1200px;
+  }
 }
 
-.main-nav__text {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: @white;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 32px;
+.page-header__logo {
+  height: 23px;
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+  }
 }

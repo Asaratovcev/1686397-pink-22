@@ -1,6 +1,33 @@
+.contacts {
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.contacts__wrapper {
+  text-align: center;
+  padding: 0 40px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 .contacts__subject-wrapper {
-  margin-bottom: 45px;
-  margin-top: 50px;
+  text-align: center;
+  padding: 50px 43px 45px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding: 55px 145px 51px 145px;
+  }
 }
 
 .contacts__question {
