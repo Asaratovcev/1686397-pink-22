@@ -1,11 +1,32 @@
 .title {
-  background-image: url("../../img/title_bg.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-position: top left;
   background-repeat: no-repeat;
-  height: 462px;
-  padding-top: 36px;
+  color: @white;
+  width: 320px;
+  min-height: 237px;
+  position: relative;
+  text-align: center;
+  padding: 102px 42px 51px;
   box-sizing: border-box;
-  background-color: #283645;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 660px;
+    min-height: 440px;
+    padding: 191px 20px 74px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/back-desktop.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 1200px;
+    min-height: 394px;
+    padding: 184px 222px 104px;
+  }
 }
 
 .title__text {

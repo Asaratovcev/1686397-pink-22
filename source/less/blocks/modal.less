@@ -1,3 +1,19 @@
+.modal {
+  width: 320px;
+  padding: 44px 20px 52px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    padding: 49px 55px 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    padding: 49px 215px 52px;
+  }
+}
+
 .modal__title {
   font-weight: bold;
   font-size: 18px;

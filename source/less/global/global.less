@@ -11,6 +11,21 @@
   overflow: hidden;
 }
 
+.fix {
+  padding: 0 20px;
+  width: 320px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+    width: 1200px;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;

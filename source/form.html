@@ -42,14 +42,14 @@
       <section class="title">
         <h1 class="title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
-      <section class="subtitle">
+      <section class="subtitle fix">
         <p class="subtitle__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </section>
       <section class="form">
         <div class="form__wrapper">
           <h2 class="visually-hidden">Заполните форму, чтобы принять участие</h2>
           <form class="form__main" action="https://echo.htmlacademy.ru" method="post" id="form_main">
-            <div class="form__holder form__name-wrapper">
+            <div class="form__name-wrapper fix">
               <div class="form__name-field">
                 <label class="form__field-label" for="surname">Фамилия:</label>
                 <input class="form__field-input" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
@@ -59,13 +59,13 @@
                 <input class="form__field-input" id="name" type="text" name="name" placeholder="Введите ваше имя *">
               </div>
               <div class="form__name-field">
-                <label class="form__field-label" for="fathername">Ваш email:</label>
+                <label class="form__field-label" for="fathername">отчество:</label>
                 <input class="form__field-input" id="fathername" type="text" name="fathername" placeholder="Ну и отчество тоже">
               </div>
             </div>
-            <fieldset class="form__fieldset form__fieldset--grey">
+            <fieldset class="form__fieldset form__fieldset--achiev fix">
               <span class="form__fieldset-title">Ваши безбашенные достижения в путешествии</span>
-              <ul class="form__fieldset-list">
+              <ul class="form__fieldset--achiev">
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-text"><input type="checkbox" name="achievment" value="Сделал селфи с акулой" id="shark" checked>
                   Сделал селфи с акулой</label>
@@ -92,7 +92,7 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="form__holder">
+            <div class="form__holder fix">
               <div class="form__contacts">
                 <label class="form__field-label" for="tel">Номер телефона</label>
                 <input class="form__field-input" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
@@ -102,7 +102,7 @@
                 <input class="form__field-input" id="email" type="email" name="email" placeholder="Введите почту *">
               </div>
             </div>
-            <fieldset class="form__fieldset  form__fieldset--grey">
+            <fieldset class="form__fieldset form__fieldset--app fix">
               <span class="form__fieldset-title">С каким приложением путешествовали?</span>
               <ul class="form__fieldset-list">
                 <li class="form__radio-item">
@@ -119,12 +119,14 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="form__textarea">
+            <div class="form__textarea fix">
               <label class="form__textarea-text" for="emotions">Опишите свои эмоции</label>
               <textarea class="form__field-input" id="emotions" name="text" form="form_main" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
-            <button class="form__button" type="submit">Отправить форму</button>
-            <p class="form__subtext"><span class="form__star">*</span> — обязательные поля</p>
+            <div class="form__submit fix">
+              <button class="form__button" type="submit">Отправить форму</button>
+              <p class="form__subtext"><span class="form__star">*</span> — обязательные поля</p>
+            </div>
           </form>
         </div>
       </section>
