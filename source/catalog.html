@@ -42,94 +42,152 @@
       <section class="title">
         <h1 class="title__text">Фотографии пользователей</h1>
       </section>
-      <section class="subtitle">
+      <section class="subtitle fix">
         <p class="subtitle__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </section>
       <section class="panorama">
-        <div class="panorama__wrapper">
+        <div class="panorama__wrapper fix">
           <h2 class="visually-hidden">Панорама дня</h2>
-          <a href="#"><img src="img/panorama.jpg" width="320" height="137" alt="Панорамный вид гор"></a>
+          <a href="#">
+            <picture>
+              <source srcset="../img/panorama-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="../img/panorama-tablet.jpg" media="(min-width: 660px)">
+              <img src="../img/panorama-mobile.jpg" alt="Панорамный вид гор">
+            </picture>
+          </a>
           <div class="panorama__aside">
             <p class="panorama__subtitle">Панорама дня</p>
           </div>
         </div>
-        <div class="panorama-description">
-          <p class="panorama-description__username">Анна</p>
-          <p class="panorama-description__time">(5 минут назад)</p>
-          <p class="panorama-description__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <input type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
-          <p class="panorama-description__likes">Нравится: 215</p>
+        <div class="panorama-description fix">
+          <div class="panorama-description__holder">
+            <div class="panorama-description__name-holder">
+              <p class="panorama-description__username">Анна</p>
+              <p class="panorama-description__time">(5 минут назад)</p>
+            </div>
+            <p class="panorama-description__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <input type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
+            <p class="panorama-description__likes">Нравится: 215</p>
+          </div>
         </div>
       </section>
-      <section class="photo">
+      <section class="photo fix">
         <h2 class="visually-hidden">Фотографии пользователей</h2>
         <div class="photo__wrapper">
-          <a href="#"><img src="img/photo-1.jpg" width="280" height="180" alt="Белый автомобиль"></a>
+          <a href="#">
+            <picture>
+              <source srcset="../img/photo-1-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="../img/photo-1-tablet.jpg" media="(min-width: 660px)">
+              <img src="img/photo-1.jpg" alt="Белый автомобиль">
+            </picture>
+          </a>
           <div class="photo-description">
-            <p class="photo-description__username">Левон</p>
-            <p class="photo-description__time">(5 часов назад)</p>
+            <div class="photo-description__username-holder">
+              <p class="photo-description__username">Левон</p>
+              <p class="photo-description__time">(5 часов назад)</p>
+            </div>
             <p class="photo-description__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <input type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
+            <input class="photo-description__like" type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
             <p class="photo-description__likes">Нравится: 356</p>
           </div>
         </div>
         <div class="photo__wrapper">
-          <a href="#"><img src="img/photo-2.jpg" width="280" height="180" alt="Барабаны"></a>
+          <a href="#">
+            <picture>
+              <source srcset="../img/photo-2-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="../img/photo-2-tablet.jpg" media="(min-width: 660px)">
+              <img src="img/photo-2.jpg" alt="Барабаны">
+            </picture>
+          </a>
           <div class="photo-description">
-            <p class="photo-description__username">Антон</p>
-            <p class="photo-description__time">(12 часов назад)</p>
+            <div class="photo-description__username-holder">
+              <p class="photo-description__username">Антон</p>
+              <p class="photo-description__time">(12 часов назад)</p>
+            </div>
             <p class="photo-description__text">Соседи будут рады!</p>
-            <input type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
+            <input class="photo-description__like" type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
             <p class="photo-description__likes">Нравится: 666</p>
           </div>
         </div>
         <div class="photo__wrapper">
-          <a href="#"><img src="img/photo-3.jpg" width="280" height="180" alt="Панорамное окно"></a>
+          <a href="#">
+            <picture>
+              <source srcset="../img/photo-3-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="../img/photo-3-tablet.jpg" media="(min-width: 660px)">
+              <img src="img/photo-3.jpg" alt="Панорамное окно">
+            </picture>
+          </a>
           <div class="photo-description">
-            <p class="photo-description__username">Борис</p>
-            <p class="photo-description__time">(20 часов назад)</p>
+            <div class="photo-description__username-holder">
+              <p class="photo-description__username">Борис</p>
+              <p class="photo-description__time">(20 часов назад)</p>
+            </div>
             <p class="photo-description__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <input type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
+            <input class="photo-description__like" type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
             <p class="photo-description__likes">Нравится: 215</p>
           </div>
         </div>
         <div class="photo__wrapper">
-          <a href="#"><img src="img/photo-4.jpg" width="280" height="180" alt="Ярмарка"></a>
+          <a href="#">
+            <picture>
+              <source srcset="../img/photo-4-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="../img/photo-4-tablet.jpg" media="(min-width: 660px)">
+              <img src="img/photo-4.jpg" alt="Ярмарка">
+            </picture>
+          </a>
           <div class="photo-description">
-            <p class="photo-description__username">Сергей</p>
-            <p class="photo-description__time">(25 часов назад)</p>
+            <div class="photo-description__username-holder">
+              <p class="photo-description__username">Сергей</p>
+              <p class="photo-description__time">(25 часов назад)</p>
+            </div>
             <p class="photo-description__text">Самая кубанская в мире!</p>
-            <input type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
+            <input class="photo-description__like" type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
             <p class="photo-description__likes">Нравится: 4</p>
           </div>
         </div>
         <div class="photo__wrapper">
-          <a href="#"><img src="img/photo-5.jpg" width="280" height="180" alt="Ноги в горах"></a>
+          <a href="#">
+            <picture>
+              <source srcset="../img/photo-5-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="../img/photo-5-tablet.jpg" media="(min-width: 660px)">
+              <img src="img/photo-5.jpg" alt="Ноги в горах">
+            </picture>
+          </a>
           <div class="photo-description">
-            <p class="photo-description__username">Максим</p>
-            <p class="photo-description__time">(40 часов назад)</p>
+            <div class="photo-description__username-holder">
+              <p class="photo-description__username">Максим</p>
+              <p class="photo-description__time">(40 часов назад)</p>
+            </div>
             <p class="photo-description__text">Где снег-то?</p>
-            <input type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
+            <input class="photo-description__like" type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
             <p class="photo-description__likes">Нравится: 150</p>
           </div>
         </div>
         <div class="photo__wrapper">
-          <a href="#"><img src="img/photo-6.jpg" width="280" height="180" alt="Крыло самолета"></a>
+          <a href="#">
+            <picture>
+              <source srcset="../img/photo-6-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="../img/photo-6-tablet.jpg" media="(min-width: 660px)">
+              <img src="img/photo-6.jpg" alt="Крыло самолета">
+            </picture>
+          </a>
           <div class="photo-description">
-            <p class="photo-description__username">Надежда</p>
-            <p class="photo-description__time">(45 часов назад)</p>
+            <div class="photo-description__username-holder">
+              <p class="photo-description__username">Надежда</p>
+              <p class="photo-description__time">(45 часов назад)</p>
+            </div>
             <p class="photo-description__text">Всем GM и взаимные лайки!</p>
-            <input type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
+            <input class="photo-description__like" type="image" src="img/heart.png" width="13" height="12" alt="Поставить лайк">
             <p class="photo-description__likes">Нравится: 2560</p>
           </div>
         </div>
       </section>
-      <section class="slogan">
+      <section class="slogan fix">
         <p class="slogan__text">Затмите их всех!</p>
         <p class="slogan__text">Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="post">
-        <div class="post__wrapper">
+        <div class="post__wrapper fix">
           <h2 class="visually-hidden">Опубликуй свое фото</h2>
           <a href="#"><img src="img/photo-7.jpg" width="280" height="374" alt="Зимняя дорога"></a>
           <ul class="post__controls-list">
@@ -143,8 +201,8 @@
               <input type="image" src="img/contrast.png" width="32" height="32" alt="Контраст фото">
             </li>
           </ul>
-          <form method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="post__form">
+          <form class="post__form" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="post__fieldset">
               <ul class="post__list">
                 <li class="post__item post__item--active">
                   <input type="range" min="0" max="100" step="1" value="90" id="crop" name="crop">
@@ -157,8 +215,10 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="post__button post__button-post" type="submit">Запостить</button>
-            <button class="post__button post__button-cancel" type="button">Отмена</button>
+            <div class="post__form-buttons">
+              <button class="post__button post__button-post" type="submit">Запостить</button>
+              <button class="post__button post__button-cancel" type="button">Отмена</button>
+            </div>
           </form>
         </div>
       </section>
