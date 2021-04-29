@@ -1,6 +1,27 @@
+.panorama__wrapper {
+  padding: 0;
+  position: relative;
+}
+
 .panorama__aside {
   background-color: @red;
   padding: 13px 20px 14px 19px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 130px;
+  }
+}
+
+.panorama-description {
+  margin-top: -7px;
 }
 
 .panorama__subtitle {
@@ -10,10 +31,21 @@
   color: @white;
 }
 
-.panorama-description {
+.panorama-description__holder {
   display: flex;
-  margin: 0 20px;
+  flex-wrap: wrap;
   background-color: @lightgray;
+  padding: 26px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr 13px;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.panorama-description__name-holder {
+  display: flex;
 }
 
 .panorama-description__username {
@@ -34,4 +66,17 @@
   font-size: 12px;
   color: @red;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    text-align: end;
+  }
+}
+
+.panorama-description__text {
+  @media (min-width: @tablet-width) {
+    grid-row-start: 2;
+    grid-column: 1 / span 3;
+  }
 }

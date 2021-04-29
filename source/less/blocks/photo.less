@@ -1,16 +1,28 @@
 .photo {
-  display: flex;
   margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .photo__wrapper {
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    width: 300px;
+  }
 }
 
 .photo-description {
   display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 26px 20px;
+  margin-top: -7px;
   background-color: @lightgray;
 }
 
@@ -28,8 +40,24 @@
   text-transform: uppercase;
 }
 
+.photo-description__text {
+  width: 100%;
+}
+
 .photo-description__likes {
   font-size: 12px;
   color: @red;
   text-transform: uppercase;
+}
+
+.photo-description__like {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    right: 20px;
+    top: 113px;
+  }
+}
+
+.photo-description__username-holder {
+  display: flex;
 }
