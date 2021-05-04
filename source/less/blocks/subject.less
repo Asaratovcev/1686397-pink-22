@@ -1,35 +1,50 @@
 .subject {
-  margin-top: 46px;
-  margin-bottom: 70px;
-  padding: 0 20px;
-  width: 320px;
+  padding: 46px 20px 40px;
+  max-width: 1200px;
   box-sizing: border-box;
-  text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
-    width: 660px;
+    padding: 58px 30px 47px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 210px;
-    width: 1200px;
+    padding: 77px 210px 72px;
   }
 }
 
 .subject__question {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 120%;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
 .subject__answer {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 25px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 150px;
+  }
+}
+
+.subject__text {
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

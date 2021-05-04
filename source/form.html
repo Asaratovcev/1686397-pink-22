@@ -6,9 +6,15 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a href="index.html"><img src="img/logotype-mobile.svg" width="74" height="23" alt="Pink"></a>
-      <nav class="main-nav">
+    <header class="page-header fix">
+      <a class="page-header__logo" href="#">
+        <picture>
+          <source srcset="../img/logotype-desktop.svg" media="(min-width: 1200px)">
+          <source srcset="../img/logotype-tablet.svg" media="(min-width: 660px)">
+          <img class="page-header__img" src="../img/logotype-mobile.svg" alt="Pink">
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
