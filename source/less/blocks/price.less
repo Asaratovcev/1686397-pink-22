@@ -9,23 +9,20 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding: 0 20px;
     width: 660px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 130px;
     width: 1200px;
   }
 }
 
 .price__table {
   margin-bottom: 45px;
-  border-collapse: separate;
-  border-spacing: 1px;
   table-layout: fixed;
   position: relative;
-  right: 260px;
+  right: 279px;
+  border-spacing: 0;
 
   @media (min-width: @tablet-width) {
     position: static;
@@ -33,40 +30,206 @@
 }
 
 .price__option {
-  background-color: @white;
   line-height: 30px;
   text-transform: uppercase;
   text-align: start;
   padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+    padding-left: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 22px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 18px;
+  }
+
+  &--hide {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.price__row-head {
+  background-color: @darkgray;
+}
+
+.price__cell-head {
+  border-left: 2px solid @white;
+
+  &--first {
+    border: none;
+    border-radius: 3px 0 0 0;
+  }
+
+  &--last {
+    border-radius: 0 3px 0 0;
+  }
+
+  &--offer {
+    background-image: url("../img/hit.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/hit-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: top left;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/hit.svg");
+      background-repeat: no-repeat;
+      background-position: top left;
+    }
+  }
 }
 
 .price__row {
-  background-color: @darkgray;
-  border: 2px solid @darkgray;
+  background-color: @white;
 }
 
-.price__row th {
+.price__cell {
+  border: 2px solid @border;
+  border-top: none;
+  border-right: none;
+  position: relative;
   min-width: 276px;
+
+  &--first {
+    border-top: 2px solid @border;
+    border-radius: 3px 0 0 0;
+  }
+
+  &--last {
+    border-right: 2px solid @border;
+    border-radius: 0 0 3px 0;
+  }
+
+  &--left {
+    border-radius: 0 0 0 3px;
+  }
 
   @media (min-width: @tablet-width) {
     min-width: 152px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 234px;
+  }
+
+  &--off {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 19px;
+      width: 33px;
+      height: 3px;
+      background-color: @orange;
+
+      @media (min-width: @tablet-width) {
+        top: 21px;
+        right: 60px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 25px;
+        right: 100px;
+      }
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--on {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      right: 35px;
+      width: 14px;
+      height: 3px;
+      background-color: @green;
+      transform: rotate(45deg);
+
+      @media (min-width: @tablet-width) {
+        top: 26px;
+        right: 79px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 29px;
+        right: 119px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 14px;
+      width: 28px;
+      height: 3px;
+      background-color: @green;
+      transform: rotate(-45deg);
+
+      @media (min-width: @tablet-width) {
+        top: 22px;
+        right: 58px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 25px;
+        right: 98px;
+      }
+    }
+  }
+}
+
+.price__cell-hidden {
+  background-color: @lightgray;
 }
 
 .price__name {
   color: @white;
+  padding-top: 10px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price__cost {
   color: @white;
+  padding-bottom: 25px;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .price__toggles {

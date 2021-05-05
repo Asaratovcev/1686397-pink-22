@@ -1,21 +1,28 @@
 .feedback__wrapper {
   text-align: center;
-  width: 320px;
-  padding: 50px 20px 60px 20px;
-  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 0 20px;
-    width: 660px;
     padding-top: 109px;
     padding-bottom: 3px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 130px;
-    width: 1200px;
+    max-width: 1200px;
     padding-bottom: 41px;
-    padding-top: 72px;
+    padding-top: 193px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 46%;
+      background-image: url("../img/quotes.svg");
+      width: 79px;
+      height: 63px;
+    }
   }
 }
 
@@ -23,27 +30,162 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  padding-bottom: 31px;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
+
+  &--top {
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--bottom {
+    line-height: 30px;
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+}
+
+.feedback__name-profession {
+  line-height: 30px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .feedback__text {
   line-height: 30px;
-  margin-bottom: 43px;
-}
+  padding-bottom: 43px;
 
-.feedback__name--bottom {
-  display: none;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding-bottom: 50px;
+  }
 
   @media (min-width: @desktop-width) {
-    display: block;
-    margin-bottom: 17px;
+    margin-left: 126px;
+    margin-right: 126px;
   }
 }
 
-.feedback__name--top {
-  display: block;
-  margin-bottom: 31px;
-
+.feedback__toggles {
   @media (min-width: @desktop-width) {
     display: none;
+  }
+}
+
+.feedback__button {
+  display: none;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  width: 22px;
+  height: 41px;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    top: 213px;
+
+    &--previous {
+      left: 130px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 25px;
+        height: 1px;
+        background-color: fade(@darkgray, 30%);
+        transform: rotate(-45deg);
+        transform-origin: 0% 0%;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 25px;
+        height: 1px;
+        background-color: fade(@darkgray, 30%);
+        transform: rotate(45deg);
+        transform-origin: 0% 0%;
+      }
+
+      &:hover::before,
+      &:hover::after {
+        background-color: @darkgray;
+      }
+
+      &:focus::before,
+      &:focus::after {
+        background-color: @darkgray;
+      }
+
+      &:active::before,
+      &:active::after {
+        background-color: fade(@darkgray, 10%);
+      }
+    }
+
+    &--next {
+      right: 130px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 25px;
+        height: 1px;
+        background-color: fade(@darkgray, 30%);
+        transform: rotate(-45deg);
+        transform-origin: 100% 0%;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 25px;
+        height: 1px;
+        background-color: fade(@darkgray, 30%);
+        transform: rotate(45deg);
+        transform-origin: 100% 0%;
+      }
+
+      &:hover::before,
+      &:hover::after {
+        background-color: @darkgray;
+      }
+
+      &:focus::before,
+      &:focus::after {
+        background-color: @darkgray;
+      }
+
+      &:active::before,
+      &:active::after {
+        background-color: fade(@darkgray, 10%);
+      }
+    }
   }
 }

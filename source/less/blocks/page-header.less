@@ -1,26 +1,26 @@
 .page-header {
-  background-color: @darkgray;
+  background-color: fade(@black, 30%);
   color: @white;
-  display: flex;
-  justify-content: space-between;
-  width: 320px;
-  box-sizing: border-box;
-  padding: 0 20px;
-
-  @media (min-width: @tablet-width) {
-    width: 660px;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: auto;
 
   @media (min-width: @desktop-width) {
     padding: 0 130px;
-    width: 1200px;
   }
 }
 
 .page-header__logo {
-  height: 23px;
+  &:hover,
+  &:focus {
+    filter: invert(39%) sepia(95%) saturate(5722%) hue-rotate(330deg) brightness(86%) contrast(90%);
+  }
 
-  @media (min-width: @tablet-width) {
-    height: 40px;
+  &:active {
+    filter: none;
+    opacity: 0.3;
   }
 }

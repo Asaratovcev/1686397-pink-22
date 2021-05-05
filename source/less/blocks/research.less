@@ -12,18 +12,14 @@
 
 .research__wrapper {
   display: flex;
-  box-sizing: border-box;
   text-align: left;
 
   @media (min-width: @tablet-width) {
-    padding: 0 20px;
-    width: 660px;
     padding-top: 54px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 130px;
-    width: 1200px;
+    max-width: 1200px;
     padding-bottom: 67px;
     padding-top: 17px;
   }
@@ -36,11 +32,33 @@
 }
 
 .research__title {
+  margin: 0;
+  padding-top: 48px;
+  padding-right: 162px;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+  }
 }
 
 .research_more {
   color: @red;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.research__description {
+  padding: 24px 0;
+
+  @media (min-width: @desktop-width) {
+    padding: 37px 0 47px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
