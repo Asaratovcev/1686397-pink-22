@@ -2,9 +2,10 @@
   background-image: url("../img/back-mobile.jpg");
   background-position: top left;
   background-repeat: no-repeat;
+  background-size: cover;
   color: @white;
-  width: 320px;
-  min-height: 237px;
+  min-width: 320px;
+  height: 237px;
   position: relative;
   text-align: center;
   padding: 102px 42px 51px;
@@ -14,7 +15,6 @@
     background-image: url("../img/back-tablet.jpg");
     background-position: top left;
     background-repeat: no-repeat;
-    width: 660px;
     min-height: 440px;
     padding: 191px 20px 74px;
   }
@@ -23,9 +23,8 @@
     background-image: url("../img/back-desktop.jpg");
     background-position: top left;
     background-repeat: no-repeat;
-    width: 1200px;
     min-height: 394px;
-    padding: 184px 222px 104px;
+    padding: 184px 210px 104px;
   }
 }
 
@@ -33,5 +32,9 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  color: @white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

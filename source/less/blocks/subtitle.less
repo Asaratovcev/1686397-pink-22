@@ -2,8 +2,38 @@
   text-align: center;
   padding-top: 54px;
   padding-bottom: 60px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .subtitle__text {
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 65px;
+    padding-right: 65px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  &--hide {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
