@@ -1,8 +1,23 @@
 .slogan {
   text-align: center;
-  margin-bottom: 52px;
+  padding-bottom: 52px;
+  padding-top: 49px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 78px;
+    padding-top: 73px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 75px;
+    padding-top: 67px;
+  }
 }
 
 .slogan__text {
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
