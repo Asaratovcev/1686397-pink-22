@@ -17,6 +17,12 @@
     background-repeat: no-repeat;
     min-height: 440px;
     padding: 191px 20px 74px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+      background-size: 1200px auto;
+      background-position: top center;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -25,6 +31,11 @@
     background-repeat: no-repeat;
     min-height: 394px;
     padding: 184px 210px 104px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+      background-position: center;
+    }
   }
 }
 
