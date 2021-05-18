@@ -1,0 +1,39 @@
+.logo {
+  position: relative;
+  bottom: 20px;
+  right: 70px;
+  fill: @white;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+  }
+
+  &:hover,
+  &:focus {
+    fill: @red;
+  }
+
+  &:active {
+    fill: fade(@white, 30%);
+  }
+}
+
+.logo__glasses {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo__stars {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
