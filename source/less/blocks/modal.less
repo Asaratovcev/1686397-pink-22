@@ -92,3 +92,28 @@
     border: 2px solid @border;
   }
 }
+
+.modal-error,
+.modal-success {
+  background-color: @white;
+  margin: 50px auto;
+  height: fit-content;
+}
+
+.modals__wrapper--overlay {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 10;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

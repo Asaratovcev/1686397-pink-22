@@ -1,5 +1,33 @@
 .features {
   background-color: @lightgray;
+  position: relative;
+
+  &::before {
+    background: inherit;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 21%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-4deg);
+    transform-origin: 100%;
+    z-index: 1;
+    top: -60px;
+
+    @media (min-width: @tablet-width) {
+      background: @white;
+      top: -180px;
+      height: 35%;
+    }
+
+    @media (min-width: @desktop-width) {
+      background: @white;
+      top: -180px;
+      height: 35%;
+    }
+  }
 }
 
 .features__wrapper {
@@ -16,7 +44,7 @@
   @media (min-width: @desktop-width) {
     padding: 0 154px;
     flex-direction: column-reverse;
-    max-width: 1200px;
+    max-width: 100%;
   }
 }
 
