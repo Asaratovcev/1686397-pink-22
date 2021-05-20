@@ -202,10 +202,42 @@
   }
 }
 
+.main-nav--opened .main-nav__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  min-height: 80vh;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: auto;
+  }
+}
+
 .main-nav--opened .main-nav__list {
   background-color: @darkgray;
+
+  @media (min-width: @desktop-width) {
+    background-color: inherit;
+  }
 }
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+  background-color: @darkgray;
+
+  @media (min-width: @desktop-width) {
+    background-color: inherit;
+  }
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
 }

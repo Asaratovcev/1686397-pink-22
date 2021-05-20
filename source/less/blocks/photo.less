@@ -9,6 +9,19 @@
 .photo__wrapper {
   margin-top: 20px;
 
+  .photo__wrapper__link {
+    display: block;
+
+    .photo__wrapper__picture {
+      display: block;
+
+      .photo__wrapper__img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: 20px;
     width: 300px;
@@ -21,9 +34,7 @@
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  align-content: flex-end;
   padding: 11px 20px;
-  margin-top: -7px;
   background-color: @lightgray;
 
   @media (min-width: @tablet-width) {

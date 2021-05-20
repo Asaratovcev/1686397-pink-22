@@ -5,11 +5,13 @@
   width: 320px;
   box-sizing: border-box;
   justify-content: center;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
     padding: 40px 20px;
     width: 660px;
+    align-items: flex-end;
   }
 
   @media (min-width: @desktop-width) {
@@ -26,6 +28,7 @@
 .page-footer__copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 41px;
 
   @media (min-width: @tablet-width) {
@@ -87,7 +90,12 @@
 
 .page-footer__logo {
   fill: @darkgray;
-  padding-bottom: 41px;
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 13px;
+    margin-bottom: 10px;
+  }
 
   &:hover,
   &:focus {
