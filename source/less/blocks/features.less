@@ -49,6 +49,9 @@
 }
 
 .features__list {
+  position: relative;
+  z-index: 1;
+
   @media (min-width: @tablet-width) {
     width: 320px;
     padding-left: 42px;
@@ -92,11 +95,20 @@
   }
 }
 
+.features__picture {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 2;
+  }
+}
+
 .features__pictures-item {
   display: none;
 
   @media (min-width: @desktop-width) {
     display: block;
+    position: relative;
+    z-index: 2;
     height: 382px;
     margin: 0 137px;
 
