@@ -1,25 +1,25 @@
 .feedback__wrapper {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 41px;
   padding-bottom: 60px;
   position: relative;
   z-index: 2;
 
   @media (min-width: @tablet-width) {
-    padding-top: 109px;
-    padding-bottom: 3px;
+    padding-top: 101px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 100%;
     padding-bottom: 41px;
-    padding-top: 193px;
+    padding-top: 183px;
 
     &::after {
       content: "";
       position: absolute;
       top: 72px;
-      left: 46%;
+      left: 47%;
       background-image: url("../img/quotes.svg");
       width: 79px;
       height: 63px;
@@ -31,16 +31,17 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  padding-bottom: 31px;
+  padding-bottom: 14px;
   color: @black;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    padding-bottom: 17px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
+    padding-bottom: 4px;
   }
 
   &--top {
@@ -58,29 +59,38 @@
     @media (min-width: @tablet-width) {
       display: block;
     }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 13px;
+    }
   }
 }
 
 .feedback__name-profession {
   line-height: 30px;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 27px;
+  }
+
   @media (min-width: @desktop-width) {
+    padding-bottom: 0;
     font-size: 18px;
   }
 }
 
 .feedback__text {
   line-height: 30px;
-  padding-bottom: 43px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    padding-bottom: 50px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 126px;
-    margin-right: 126px;
+    margin-right: 115px;
   }
 }
 
@@ -104,7 +114,7 @@
     top: 213px;
 
     &--previous {
-      left: 130px;
+      left: 138px;
 
       &::after {
         content: "";
@@ -147,7 +157,7 @@
     }
 
     &--next {
-      right: 130px;
+      right: 140px;
 
       &::after {
         content: "";

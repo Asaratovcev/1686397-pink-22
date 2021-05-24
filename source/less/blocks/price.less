@@ -1,15 +1,17 @@
 .price {
   background-color: @lightgray;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 74px;
+  padding-bottom: 42px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding-top: 114px;
+    padding-bottom: 39px;
+    padding-top: 108px;
   }
 
-  @media (min-width: @tablet-width) {
-    padding-top: 159px;
+  @media (min-width: @desktop-width) {
+    padding-top: 148px;
+    padding-bottom: 65px;
   }
 
   &::before {
@@ -17,24 +19,26 @@
     bottom: 0;
     content: "";
     display: block;
-    height: 21%;
+    height: 17%;
     left: 0;
     position: absolute;
     right: 0;
     transform: skewY(-4deg);
     transform-origin: 100%;
     z-index: 1;
-    top: -60px;
+    top: -30px;
 
     @media (min-width: @tablet-width) {
       background: @white;
-      top: -150px;
+      transform: skewY(-3.5deg);
+      top: -132px;
       height: 35%;
     }
 
     @media (min-width: @desktop-width) {
       background: @white;
-      top: -180px;
+      transform: skewY(-4.5deg);
+      top: -187px;
       height: 35%;
     }
   }
@@ -45,25 +49,32 @@
   text-align: center;
   overflow: hidden;
   margin: auto;
+  padding: 0 18px;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
+    padding: 0 15px;
+    width: auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    padding: 0 130px;
   }
 }
 
 .price__table {
-  margin-bottom: 45px;
+  padding-bottom: 31px;
   table-layout: fixed;
   position: relative;
-  right: 279px;
+  right: 561px;
   border-spacing: 0;
 
   @media (min-width: @tablet-width) {
     position: static;
+    padding-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -72,8 +83,8 @@
   text-transform: uppercase;
   text-align: start;
   padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     text-transform: none;
@@ -83,9 +94,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 22px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-left: 19px;
+    padding-top: 8px;
+    padding-bottom: 17px;
     font-size: 18px;
   }
 
@@ -157,11 +168,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-width: 152px;
+    min-width: 151px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 234px;
+    min-width: 231px;
   }
 
   &--off {
@@ -169,7 +180,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 24px;
+      top: 26px;
       right: 19px;
       width: 33px;
       height: 3px;
@@ -199,7 +210,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 28px;
+      top: 36px;
       right: 35px;
       width: 14px;
       height: 3px;
@@ -220,7 +231,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 24px;
+      top: 30px;
       right: 14px;
       width: 28px;
       height: 3px;
@@ -252,7 +263,12 @@
   line-height: 30px;
   text-transform: uppercase;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 11px;
+  }
+
   @media (min-width: @desktop-width) {
+    padding-top: 17px;
     font-size: 18px;
   }
 }
@@ -265,8 +281,13 @@
   font-size: 18px;
   line-height: 30px;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 6px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 24px;
+    padding-bottom: 22px;
   }
 }
 

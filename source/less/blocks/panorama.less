@@ -5,27 +5,24 @@
 
 .panorama__aside {
   background-color: @red;
-  padding: 13px 20px 14px 19px;
+  padding: 5px 25px 6px 19px;
   text-transform: uppercase;
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: -1px;
+  right: 19px;
 
   @media (min-width: @tablet-width) {
     top: 57px;
   }
 
   @media (min-width: @desktop-width) {
+    top: 55px;
     right: 130px;
   }
 }
 
 .panorama__img {
   width: 100%;
-}
-
-.panorama-description {
-  margin-top: -7px;
 }
 
 .panorama__subtitle {
@@ -39,21 +36,27 @@
   display: flex;
   flex-wrap: wrap;
   background-color: @lightgray;
-  padding-left: 17px;
-  padding-right: 10px;
-  padding-top: 23px;
-  padding-bottom: 20px;
+  padding: 14px 10px 19px 17px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 2fr 1fr 13px;
     grid-template-rows: auto auto;
+    padding: 23px 10px 25px 31px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 23px 10px 25px 28px;
   }
 }
 
 .panorama-description__name-holder {
   display: flex;
-  padding-bottom: 2px;
+  padding-top: 2px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .panorama-description__username {
@@ -68,25 +71,28 @@
   line-height: 24px;
   color: @darkgray;
   text-transform: uppercase;
+  padding-left: 4px;
+  padding-top: 1px;
 }
 
 .panorama-description__likes {
   font-size: 12px;
   color: @red;
   text-transform: uppercase;
-  padding-left: 18px;
-  padding-top: 3px;
+  padding-left: 19px;
+  padding-top: 11px;
 
   @media (min-width: @tablet-width) {
     grid-row-start: 1;
     grid-column-start: 2;
     text-align: end;
     padding-left: 0;
-    padding-right: 16px;
+    padding-right: 36px;
+    padding-top: 1px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 40px;
+    padding-right: 37px;
   }
 }
 
@@ -100,9 +106,14 @@
 
 .panorama-description__image {
   position: relative;
-  top: 8px;
+  top: 16px;
+
+  @media (min-width: @tablet-width) {
+    top: 7px;
+    right: 20px;
+  }
 
   @media (min-width: @desktop-width) {
-    right: 25px;
+    right: 22px;
   }
 }

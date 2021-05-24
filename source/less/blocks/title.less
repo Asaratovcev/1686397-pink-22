@@ -8,7 +8,7 @@
   height: 237px;
   position: relative;
   text-align: center;
-  padding: 102px 42px 51px;
+  padding: 94px 42px 51px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
@@ -16,7 +16,7 @@
     background-position: top left;
     background-repeat: no-repeat;
     min-height: 440px;
-    padding: 191px 20px 74px;
+    padding: 175px 20px 74px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
@@ -30,6 +30,7 @@
     background-position: top left;
     background-repeat: no-repeat;
     min-height: 394px;
+    padding: 170px 20px 74px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
@@ -46,5 +47,13 @@
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 190px;
+
+    &--catalog {
+      padding: 0 250px;
+    }
   }
 }

@@ -52,7 +52,7 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: none;
-    padding: 48px 0;
+    padding: 46px 0;
   }
 
   &:hover {
@@ -80,6 +80,11 @@
   cursor: pointer;
   border: none;
 
+  @media (min-width: @tablet-width) {
+    top: 43px;
+    right: 20px;
+  }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
@@ -93,7 +98,7 @@
   width: 50px;
   height: 4px;
   background-color: @white;
-  box-shadow: 0 9px 0 0 @white, 0 18px 0 0 @white;
+  box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
 }
 
 .main-nav--closed .main-nav__toggle:hover::before {
@@ -170,7 +175,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 25px;
+        bottom: 34px;
         left: 0;
         height: 2px;
         background: @white;
@@ -186,10 +191,14 @@
   padding-bottom: 23px;
   padding-left: 20px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+  }
+
   @media (min-width: @desktop-width) {
     width: auto;
     height: 40px;
-    padding-right: 173px;
+    padding-right: 172px;
     padding-bottom: 43px;
     padding-top: 27px;
     padding-left: 0;

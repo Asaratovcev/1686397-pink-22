@@ -1,54 +1,80 @@
 .page-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 74px;
-  width: 320px;
+  padding: 40px 60px;
+  width: auto;
   box-sizing: border-box;
   justify-content: center;
   margin: auto;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
-    padding: 40px 20px;
-    width: 660px;
+    padding: 18px 20px;
     align-items: flex-end;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 75px 130px;
-    width: 1200px;
+    padding: 52px 130px;
+
+    &--catalog {
+      padding: 81px 130px;
+    }
   }
 }
 
 .page-footer__list {
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 16px;
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    padding-left: 9px;
+  }
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 41px;
+  padding-top: 33px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 7px;
+    padding-top: 0;
+    padding-bottom: 4px;
   }
 }
 
-.copyright__text {
-  line-height: 14px;
+.page-footer__text {
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding-bottom: 17px;
+  }
 }
 
 .page-footer__item {
-  margin-right: 15px;
+  margin-right: 9px;
 
   &:last-child {
     margin-right: 0;
   }
 
   @media (min-width: @tablet-width) {
-    margin-right: 11px;
+    margin-right: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 5px;
   }
 }
 
@@ -75,7 +101,13 @@
 
 .page-footer__link-academy {
   fill: @red;
-  margin-left: 15px;
+  padding-left: 16px;
+  padding-top: 3px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 13px;
+    padding-bottom: 4px;
+  }
 
   &:hover,
   &:focus {
@@ -90,11 +122,11 @@
 
 .page-footer__logo {
   fill: @darkgray;
-  margin-bottom: 41px;
+  padding-bottom: 33px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 13px;
-    margin-bottom: 10px;
+    padding-top: 18px;
+    padding-bottom: 10px;
   }
 
   &:hover,
